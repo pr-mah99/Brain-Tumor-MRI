@@ -1,0 +1,8 @@
+Model,Val Accuracy (%),Test Accuracy (%),Parameters,Training Time (min),Inference Time (ms/img),Efficiency (Acc%/M)
+Proposed_Model,98.65,95.24,659228,21.83,0.500,144.47
+CNN_SGD,97.20,94.66,2409220,24.49,0.562,39.29
+ResNet18,87.20,82.60,11178564,12.73,0.217,7.39
+DenseNet121,89.84,84.59,6957956,16.10,1.488,12.16
+EfficientNetB0,88.60,80.74,4012672,13.74,0.558,20.12
+VGG16,95.28,90.76,134276932,17.88,0.766,0.68
+MobileNetV2,86.74,80.94,2228996,13.29,0.251,36.31

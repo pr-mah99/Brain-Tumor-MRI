@@ -1,0 +1,12 @@
+==================================================
+BRAIN TUMOR DETECTION - FINAL METRICS
+==================================================
+
+Accuracy: 0.9883
+Precision: 0.9901
+Recall: 0.9868
+F1-Score: 0.9885
+
+Confusion Matrix:
+[[293   3]
+ [  4 300]]

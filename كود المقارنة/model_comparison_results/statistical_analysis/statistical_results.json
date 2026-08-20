@@ -1,0 +1,907 @@
+{
+  "test_accuracy": {
+    "Proposed_Model": 0.9523612261806131,
+    "CNN_SGD": 0.9465617232808616,
+    "ResNet18": 0.8260149130074566,
+    "DenseNet121": 0.8458989229494615,
+    "EfficientNetB0": 0.8073736536868269,
+    "VGG16": 0.9076222038111019,
+    "MobileNetV2": 0.8094449047224523
+  },
+  "bootstrap_ci": {
+    "Proposed_Model": {
+      "low": 0.9436619718309859,
+      "high": 0.9606462303231151
+    },
+    "CNN_SGD": {
+      "low": 0.9374482187241093,
+      "high": 0.9552609776304888
+    },
+    "ResNet18": {
+      "low": 0.8102734051367025,
+      "high": 0.8405136702568351
+    },
+    "DenseNet121": {
+      "low": 0.8309859154929577,
+      "high": 0.8599937862468929
+    },
+    "EfficientNetB0": {
+      "low": 0.7916321458160729,
+      "high": 0.8231151615575808
+    },
+    "VGG16": {
+      "low": 0.896023198011599,
+      "high": 0.9192212096106048
+    },
+    "MobileNetV2": {
+      "low": 0.7932891466445733,
+      "high": 0.8251864125932062
+    }
+  },
+  "bootstrap_delta_vs_proposed": {
+    "CNN_SGD": {
+      "mean_delta": 0.005796603148301572,
+      "ci_low": -0.0024855012427505985,
+      "ci_high": 0.014084507042253502,
+      "p_value": 0.187,
+      "p_value_display": "p = 0.187"
+    },
+    "ResNet18": {
+      "mean_delta": 0.12653148301574152,
+      "ci_low": 0.11184755592377793,
+      "ci_high": 0.14167357083678533,
+      "p_value": 0.0,
+      "p_value_display": "p < 1.0e-04"
+    },
+    "DenseNet121": {
+      "mean_delta": 0.10648570836785418,
+      "ci_low": 0.09237779618889808,
+      "ci_high": 0.12096106048053024,
+      "p_value": 0.0,
+      "p_value_display": "p < 1.0e-04"
+    },
+    "EfficientNetB0": {
+      "mean_delta": 0.14498985086992544,
+      "ci_low": 0.12966031483015739,
+      "ci_high": 0.16072908036454014,
+      "p_value": 0.0,
+      "p_value_display": "p < 1.0e-04"
+    },
+    "VGG16": {
+      "mean_delta": 0.04471797845898923,
+      "ci_low": 0.03355426677713336,
+      "ci_high": 0.055923777961888965,
+      "p_value": 0.0,
+      "p_value_display": "p < 1.0e-04"
+    },
+    "MobileNetV2": {
+      "mean_delta": 0.14297427506213753,
+      "ci_low": 0.12758906379453194,
+      "ci_high": 0.15825393537696764,
+      "p_value": 0.0,
+      "p_value_display": "p < 1.0e-04"
+    }
+  },
+  "mcnemar_vs_proposed": {
+    "CNN_SGD": {
+      "table": [
+        [
+          2239,
+          60
+        ],
+        [
+          46,
+          69
+        ]
+      ],
+      "statistic": 1.5943396226415094,
+      "p_value": 0.20670721690576502,
+      "log10_p": -0.6846443602975533,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 106
+    },
+    "ResNet18": {
+      "table": [
+        [
+          1959,
+          340
+        ],
+        [
+          35,
+          80
+        ]
+      ],
+      "statistic": 246.44266666666667,
+      "p_value": 1.5487890437996254e-55,
+      "log10_p": -54.810007732242674,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 375
+    },
+    "DenseNet121": {
+      "table": [
+        [
+          2001,
+          298
+        ],
+        [
+          41,
+          74
+        ]
+      ],
+      "statistic": 193.32153392330383,
+      "p_value": 5.988858960730821e-44,
+      "log10_p": -43.22265591454938,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 339
+    },
+    "EfficientNetB0": {
+      "table": [
+        [
+          1916,
+          383
+        ],
+        [
+          33,
+          82
+        ]
+      ],
+      "statistic": 292.79086538461536,
+      "p_value": 1.2259192653653986e-65,
+      "log10_p": -64.91153812994878,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 416
+    },
+    "VGG16": {
+      "table": [
+        [
+          2144,
+          155
+        ],
+        [
+          47,
+          68
+        ]
+      ],
+      "statistic": 56.67821782178218,
+      "p_value": 5.13289826739274e-14,
+      "log10_p": -13.289637343249035,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 202
+    },
+    "MobileNetV2": {
+      "table": [
+        [
+          1924,
+          375
+        ],
+        [
+          30,
+          85
+        ]
+      ],
+      "statistic": 292.18765432098763,
+      "p_value": 1.6591754298260243e-65,
+      "log10_p": -64.78010769222912,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 405
+    }
+  },
+  "mcnemar_full_pairwise": {
+    "Proposed_Model_vs_CNN_SGD": {
+      "table": [
+        [
+          2239,
+          60
+        ],
+        [
+          46,
+          69
+        ]
+      ],
+      "statistic": 1.5943396226415094,
+      "p_value": 0.20670721690576502,
+      "log10_p": -0.6846443602975533,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 106
+    },
+    "Proposed_Model_vs_ResNet18": {
+      "table": [
+        [
+          1959,
+          340
+        ],
+        [
+          35,
+          80
+        ]
+      ],
+      "statistic": 246.44266666666667,
+      "p_value": 1.5487890437996254e-55,
+      "log10_p": -54.810007732242674,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 375
+    },
+    "Proposed_Model_vs_DenseNet121": {
+      "table": [
+        [
+          2001,
+          298
+        ],
+        [
+          41,
+          74
+        ]
+      ],
+      "statistic": 193.32153392330383,
+      "p_value": 5.988858960730821e-44,
+      "log10_p": -43.22265591454938,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 339
+    },
+    "Proposed_Model_vs_EfficientNetB0": {
+      "table": [
+        [
+          1916,
+          383
+        ],
+        [
+          33,
+          82
+        ]
+      ],
+      "statistic": 292.79086538461536,
+      "p_value": 1.2259192653653986e-65,
+      "log10_p": -64.91153812994878,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 416
+    },
+    "Proposed_Model_vs_VGG16": {
+      "table": [
+        [
+          2144,
+          155
+        ],
+        [
+          47,
+          68
+        ]
+      ],
+      "statistic": 56.67821782178218,
+      "p_value": 5.13289826739274e-14,
+      "log10_p": -13.289637343249035,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 202
+    },
+    "Proposed_Model_vs_MobileNetV2": {
+      "table": [
+        [
+          1924,
+          375
+        ],
+        [
+          30,
+          85
+        ]
+      ],
+      "statistic": 292.18765432098763,
+      "p_value": 1.6591754298260243e-65,
+      "log10_p": -64.78010769222912,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 405
+    },
+    "CNN_SGD_vs_Proposed_Model": {
+      "table": [
+        [
+          2239,
+          46
+        ],
+        [
+          60,
+          69
+        ]
+      ],
+      "statistic": 1.5943396226415094,
+      "p_value": 0.20670721690576502,
+      "log10_p": -0.6846443602975533,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 106
+    },
+    "CNN_SGD_vs_ResNet18": {
+      "table": [
+        [
+          1952,
+          333
+        ],
+        [
+          42,
+          87
+        ]
+      ],
+      "statistic": 224.26666666666668,
+      "p_value": 1.061095348912064e-50,
+      "log10_p": -49.97424558909979,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 375
+    },
+    "CNN_SGD_vs_DenseNet121": {
+      "table": [
+        [
+          2005,
+          280
+        ],
+        [
+          37,
+          92
+        ]
+      ],
+      "statistic": 184.74447949526814,
+      "p_value": 4.462523659910086e-42,
+      "log10_p": -41.35041946828229,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 317
+    },
+    "CNN_SGD_vs_EfficientNetB0": {
+      "table": [
+        [
+          1907,
+          378
+        ],
+        [
+          42,
+          87
+        ]
+      ],
+      "statistic": 267.20238095238096,
+      "p_value": 4.620082114660258e-60,
+      "log10_p": -59.33535030547701,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 420
+    },
+    "CNN_SGD_vs_VGG16": {
+      "table": [
+        [
+          2143,
+          142
+        ],
+        [
+          48,
+          81
+        ]
+      ],
+      "statistic": 45.52105263157895,
+      "p_value": 1.5100698976567428e-11,
+      "log10_p": -10.821002949750504,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 190
+    },
+    "CNN_SGD_vs_MobileNetV2": {
+      "table": [
+        [
+          1922,
+          363
+        ],
+        [
+          32,
+          97
+        ]
+      ],
+      "statistic": 275.69620253164555,
+      "p_value": 6.508691981834893e-62,
+      "log10_p": -61.18650628057897,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 395
+    },
+    "ResNet18_vs_Proposed_Model": {
+      "table": [
+        [
+          1959,
+          35
+        ],
+        [
+          340,
+          80
+        ]
+      ],
+      "statistic": 246.44266666666667,
+      "p_value": 1.5487890437996254e-55,
+      "log10_p": -54.810007732242674,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 375
+    },
+    "ResNet18_vs_CNN_SGD": {
+      "table": [
+        [
+          1952,
+          42
+        ],
+        [
+          333,
+          87
+        ]
+      ],
+      "statistic": 224.26666666666668,
+      "p_value": 1.061095348912064e-50,
+      "log10_p": -49.97424558909979,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 375
+    },
+    "ResNet18_vs_DenseNet121": {
+      "table": [
+        [
+          1826,
+          168
+        ],
+        [
+          216,
+          204
+        ]
+      ],
+      "statistic": 5.752604166666667,
+      "p_value": 0.016464232748736762,
+      "log10_p": -1.7834585030786316,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 384
+    },
+    "ResNet18_vs_EfficientNetB0": {
+      "table": [
+        [
+          1748,
+          246
+        ],
+        [
+          201,
+          219
+        ]
+      ],
+      "statistic": 4.331096196868009,
+      "p_value": 0.03742213784096395,
+      "log10_p": -1.4268714058789498,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 447
+    },
+    "ResNet18_vs_VGG16": {
+      "table": [
+        [
+          1911,
+          83
+        ],
+        [
+          280,
+          140
+        ]
+      ],
+      "statistic": 105.82920110192838,
+      "p_value": 8.03724571349788e-25,
+      "log10_p": -24.094892754281926,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 363
+    },
+    "ResNet18_vs_MobileNetV2": {
+      "table": [
+        [
+          1769,
+          225
+        ],
+        [
+          185,
+          235
+        ]
+      ],
+      "statistic": 3.709756097560976,
+      "p_value": 0.05409529517955834,
+      "log10_p": -1.266840505067338,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 410
+    },
+    "DenseNet121_vs_Proposed_Model": {
+      "table": [
+        [
+          2001,
+          41
+        ],
+        [
+          298,
+          74
+        ]
+      ],
+      "statistic": 193.32153392330383,
+      "p_value": 5.988858960730821e-44,
+      "log10_p": -43.22265591454938,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 339
+    },
+    "DenseNet121_vs_CNN_SGD": {
+      "table": [
+        [
+          2005,
+          37
+        ],
+        [
+          280,
+          92
+        ]
+      ],
+      "statistic": 184.74447949526814,
+      "p_value": 4.462523659910086e-42,
+      "log10_p": -41.35041946828229,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 317
+    },
+    "DenseNet121_vs_ResNet18": {
+      "table": [
+        [
+          1826,
+          216
+        ],
+        [
+          168,
+          204
+        ]
+      ],
+      "statistic": 5.752604166666667,
+      "p_value": 0.016464232748736762,
+      "log10_p": -1.7834585030786316,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 384
+    },
+    "DenseNet121_vs_EfficientNetB0": {
+      "table": [
+        [
+          1774,
+          268
+        ],
+        [
+          175,
+          197
+        ]
+      ],
+      "statistic": 19.10609480812641,
+      "p_value": 1.2364938851856213e-05,
+      "log10_p": -4.90780802700726,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 443
+    },
+    "DenseNet121_vs_VGG16": {
+      "table": [
+        [
+          1957,
+          85
+        ],
+        [
+          234,
+          138
+        ]
+      ],
+      "statistic": 68.66457680250784,
+      "p_value": 1.1671876261803063e-16,
+      "log10_p": -15.932859325218526,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 319
+    },
+    "DenseNet121_vs_MobileNetV2": {
+      "table": [
+        [
+          1795,
+          247
+        ],
+        [
+          159,
+          213
+        ]
+      ],
+      "statistic": 18.642857142857142,
+      "p_value": 1.5763674598507773e-05,
+      "log10_p": -4.802342538633322,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 406
+    },
+    "EfficientNetB0_vs_Proposed_Model": {
+      "table": [
+        [
+          1916,
+          33
+        ],
+        [
+          383,
+          82
+        ]
+      ],
+      "statistic": 292.79086538461536,
+      "p_value": 1.2259192653653986e-65,
+      "log10_p": -64.91153812994878,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 416
+    },
+    "EfficientNetB0_vs_CNN_SGD": {
+      "table": [
+        [
+          1907,
+          42
+        ],
+        [
+          378,
+          87
+        ]
+      ],
+      "statistic": 267.20238095238096,
+      "p_value": 4.620082114660258e-60,
+      "log10_p": -59.33535030547701,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 420
+    },
+    "EfficientNetB0_vs_ResNet18": {
+      "table": [
+        [
+          1748,
+          201
+        ],
+        [
+          246,
+          219
+        ]
+      ],
+      "statistic": 4.331096196868009,
+      "p_value": 0.03742213784096395,
+      "log10_p": -1.4268714058789498,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 447
+    },
+    "EfficientNetB0_vs_DenseNet121": {
+      "table": [
+        [
+          1774,
+          175
+        ],
+        [
+          268,
+          197
+        ]
+      ],
+      "statistic": 19.10609480812641,
+      "p_value": 1.2364938851856213e-05,
+      "log10_p": -4.90780802700726,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 443
+    },
+    "EfficientNetB0_vs_VGG16": {
+      "table": [
+        [
+          1867,
+          82
+        ],
+        [
+          324,
+          141
+        ]
+      ],
+      "statistic": 143.05665024630542,
+      "p_value": 5.712742153982192e-33,
+      "log10_p": -32.24315537748502,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 406
+    },
+    "EfficientNetB0_vs_MobileNetV2": {
+      "table": [
+        [
+          1750,
+          199
+        ],
+        [
+          204,
+          261
+        ]
+      ],
+      "statistic": 0.03970223325062035,
+      "p_value": 0.8420639096769191,
+      "log10_p": -0.07465494583203362,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 403
+    },
+    "VGG16_vs_Proposed_Model": {
+      "table": [
+        [
+          2144,
+          47
+        ],
+        [
+          155,
+          68
+        ]
+      ],
+      "statistic": 56.67821782178218,
+      "p_value": 5.13289826739274e-14,
+      "log10_p": -13.289637343249035,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 202
+    },
+    "VGG16_vs_CNN_SGD": {
+      "table": [
+        [
+          2143,
+          48
+        ],
+        [
+          142,
+          81
+        ]
+      ],
+      "statistic": 45.52105263157895,
+      "p_value": 1.5100698976567428e-11,
+      "log10_p": -10.821002949750504,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 190
+    },
+    "VGG16_vs_ResNet18": {
+      "table": [
+        [
+          1911,
+          280
+        ],
+        [
+          83,
+          140
+        ]
+      ],
+      "statistic": 105.82920110192838,
+      "p_value": 8.03724571349788e-25,
+      "log10_p": -24.094892754281926,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 363
+    },
+    "VGG16_vs_DenseNet121": {
+      "table": [
+        [
+          1957,
+          234
+        ],
+        [
+          85,
+          138
+        ]
+      ],
+      "statistic": 68.66457680250784,
+      "p_value": 1.1671876261803063e-16,
+      "log10_p": -15.932859325218526,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 319
+    },
+    "VGG16_vs_EfficientNetB0": {
+      "table": [
+        [
+          1867,
+          324
+        ],
+        [
+          82,
+          141
+        ]
+      ],
+      "statistic": 143.05665024630542,
+      "p_value": 5.712742153982192e-33,
+      "log10_p": -32.24315537748502,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 406
+    },
+    "VGG16_vs_MobileNetV2": {
+      "table": [
+        [
+          1884,
+          307
+        ],
+        [
+          70,
+          153
+        ]
+      ],
+      "statistic": 147.73474801061008,
+      "p_value": 5.421435313501186e-34,
+      "log10_p": -33.26588571969575,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 377
+    },
+    "MobileNetV2_vs_Proposed_Model": {
+      "table": [
+        [
+          1924,
+          30
+        ],
+        [
+          375,
+          85
+        ]
+      ],
+      "statistic": 292.18765432098763,
+      "p_value": 1.6591754298260243e-65,
+      "log10_p": -64.78010769222912,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 405
+    },
+    "MobileNetV2_vs_CNN_SGD": {
+      "table": [
+        [
+          1922,
+          32
+        ],
+        [
+          363,
+          97
+        ]
+      ],
+      "statistic": 275.69620253164555,
+      "p_value": 6.508691981834893e-62,
+      "log10_p": -61.18650628057897,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 395
+    },
+    "MobileNetV2_vs_ResNet18": {
+      "table": [
+        [
+          1769,
+          185
+        ],
+        [
+          225,
+          235
+        ]
+      ],
+      "statistic": 3.709756097560976,
+      "p_value": 0.05409529517955834,
+      "log10_p": -1.266840505067338,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 410
+    },
+    "MobileNetV2_vs_DenseNet121": {
+      "table": [
+        [
+          1795,
+          159
+        ],
+        [
+          247,
+          213
+        ]
+      ],
+      "statistic": 18.642857142857142,
+      "p_value": 1.5763674598507773e-05,
+      "log10_p": -4.802342538633322,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 406
+    },
+    "MobileNetV2_vs_EfficientNetB0": {
+      "table": [
+        [
+          1750,
+          204
+        ],
+        [
+          199,
+          261
+        ]
+      ],
+      "statistic": 0.03970223325062035,
+      "p_value": 0.8420639096769191,
+      "log10_p": -0.07465494583203362,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 403
+    },
+    "MobileNetV2_vs_VGG16": {
+      "table": [
+        [
+          1884,
+          70
+        ],
+        [
+          307,
+          153
+        ]
+      ],
+      "statistic": 147.73474801061008,
+      "p_value": 5.421435313501186e-34,
+      "log10_p": -33.26588571969575,
+      "method": "chi2_continuity_corrected",
+      "n_discordant": 377
+    }
+  },
+  "n_bootstrap": 10000,
+  "confidence_level": 0.95
+}

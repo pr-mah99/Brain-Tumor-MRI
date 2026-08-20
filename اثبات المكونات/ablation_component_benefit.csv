@@ -1,0 +1,5 @@
+﻿Component,Full_Model_Acc(%),Without_Component_Acc(%),Δ Accuracy (%),Δ Precision (%),Δ Recall (%),Δ F1-score (%),t-statistic (curve),p-value (curve),Significant (p<0.05)
+Micro Adaptive Feature Extractor (MAFE),98.34,98.29,0.05,0.08,0.01,0.05,1.21,0.23198,No
+Micro Multi-Scale Processor (MMSP),98.34,96.53,1.81,1.93,1.88,1.91,4.972,1e-05,Yes
+Intelligent Pooling (CAIP),98.34,98.08,0.26,0.24,0.28,0.26,1.566,0.12382,No
+ALL 3 components combined (vs. Baseline),98.34,95.65,2.69,2.71,2.82,2.78,4.914,1e-05,Yes

@@ -1,0 +1,10 @@
+Comparative Analysis of Resource-Efficient CNN Architectures for Brain Tumor Classification
+
+Md Ashik Khan; Rafath Bin Zafar Auvee (2024)
+
+الرابط:
+https://ieeexplore.ieee.org/document/11021970
+==========
+
+Abstract:
+Accurate brain tumor classification in MRI images is essential for timely diagnosis and effective treatment planning. While deep learning models such as ResNet18 and VGG16 have demonstrated high accuracy, they often come with increased complexity and computational demands. This study presents a comparative analysis of a simple yet effective Convolutional Neural Network (CNN) architecture against pre-trained ResNet18 and VGG16 models for brain tumor classification using two publicly available datasets: Br35H:: Brain Tumor Detection 2020 and Brain Tumor MRI Dataset. Despite its lower complexity, the custom CNN architecture shows competitive performance compared to the pre-trained models. In binary classification tasks, the custom CNN achieved an accuracy of 98.67% on the Br35H dataset and 99.62% on the Brain Tumor MRI Dataset. For multi-class classification, the custom CNN, with slight architectural modifications, achieved an accuracy of 98.09% on the Brain Tumor MRI Dataset. Although ResNet18 and VGG16 maintained high performance, the custom CNN offered a more computationally efficient alternative. Additionally, the custom CNN was evaluated using few-shot learning scenarios (0, 5, 10, 15, 20, 40, and 80 shots), demonstrating notable accuracy improvements with increased shots. This study underscores the potential of well-designed, less complex CNN architectures as effective and computationally efficient alternatives to deeper, pre-trained models for medical imaging tasks, specifically brain tumor classification.

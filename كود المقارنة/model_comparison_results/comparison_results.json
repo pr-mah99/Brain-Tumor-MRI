@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Proposed_Model",
+    "params": 659228,
+    "training_time": 1310.0994458198547,
+    "inference_time_ms": 0.5004434617176071,
+    "val_accuracy": 0.9865284974093265,
+    "test_accuracy": 0.9523612261806131
+  },
+  {
+    "name": "CNN_SGD",
+    "params": 2409220,
+    "training_time": 1469.4032230377197,
+    "inference_time_ms": 0.5615250374921216,
+    "val_accuracy": 0.9720207253886011,
+    "test_accuracy": 0.9465617232808616
+  },
+  {
+    "name": "ResNet18",
+    "params": 11178564,
+    "training_time": 763.9871668815613,
+    "inference_time_ms": 0.21740673194765156,
+    "val_accuracy": 0.872020725388601,
+    "test_accuracy": 0.8260149130074566
+  },
+  {
+    "name": "DenseNet121",
+    "params": 6957956,
+    "training_time": 965.704517364502,
+    "inference_time_ms": 1.4882966715536932,
+    "val_accuracy": 0.8984455958549222,
+    "test_accuracy": 0.8458989229494615
+  },
+  {
+    "name": "EfficientNetB0",
+    "params": 4012672,
+    "training_time": 824.315215587616,
+    "inference_time_ms": 0.5581223875802711,
+    "val_accuracy": 0.8860103626943006,
+    "test_accuracy": 0.8073736536868269
+  },
+  {
+    "name": "VGG16",
+    "params": 134276932,
+    "training_time": 1072.9995074272156,
+    "inference_time_ms": 0.7659660061233381,
+    "val_accuracy": 0.9528497409326425,
+    "test_accuracy": 0.9076222038111019
+  },
+  {
+    "name": "MobileNetV2",
+    "params": 2228996,
+    "training_time": 797.4319903850555,
+    "inference_time_ms": 0.25133960189756127,
+    "val_accuracy": 0.8673575129533678,
+    "test_accuracy": 0.8094449047224523
+  }
+]

@@ -1,0 +1,52 @@
+{
+  "Baseline": {
+    "name": "Baseline",
+    "params": 405604,
+    "training_time_s": 1130.6101353168488,
+    "best_val_acc": 95.64766839378238,
+    "final_val_acc": 95.5440414507772,
+    "precision_macro": 95.61806522660865,
+    "recall_macro": 95.53449241162355,
+    "f1_macro": 95.56770372287613
+  },
+  "Full_Model": {
+    "name": "Full_Model",
+    "params": 659228,
+    "training_time_s": 1398.1817462444305,
+    "best_val_acc": 98.34196891191709,
+    "final_val_acc": 98.23834196891191,
+    "precision_macro": 98.33297090949209,
+    "recall_macro": 98.35716567812219,
+    "f1_macro": 98.34465108905238
+  },
+  "No_MAFE": {
+    "name": "No_MAFE",
+    "params": 654272,
+    "training_time_s": 2295.1834754943848,
+    "best_val_acc": 98.29015544041451,
+    "final_val_acc": 97.92746113989638,
+    "precision_macro": 98.2537217132447,
+    "recall_macro": 98.34252743558352,
+    "f1_macro": 98.29709840484074
+  },
+  "No_MMSP": {
+    "name": "No_MMSP",
+    "params": 413338,
+    "training_time_s": 1248.4706485271454,
+    "best_val_acc": 96.52849740932643,
+    "final_val_acc": 96.42487046632124,
+    "precision_macro": 96.40075620707745,
+    "recall_macro": 96.47879890741412,
+    "f1_macro": 96.43614438310706
+  },
+  "No_IntelligentPool": {
+    "name": "No_IntelligentPool",
+    "params": 656450,
+    "training_time_s": 1317.6511108875275,
+    "best_val_acc": 98.08290155440415,
+    "final_val_acc": 97.92746113989638,
+    "precision_macro": 98.09439145880218,
+    "recall_macro": 98.07535991259111,
+    "f1_macro": 98.08470828740435
+  }
+}

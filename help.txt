@@ -1,0 +1,20 @@
+العنوان:
+An Efficient Deep Learning Approach with Modified CNN for Multi-Class Brain Tumor Classification
+
+=======================
+Brain Tumor MRI Dataset (Glioma, Meningioma, Pituitary, No Tumor) - Epic and CSCR hospital Dataset
+https://data.mendeley.com/datasets/zwr4ntf94j/1
+=================
+Brain Tumor MRI Dataset
+https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
+=================
+Br35H :: Brain Tumor Detection 2020
+https://www.kaggle.com/datasets/ahmedhamada0/brain-tumor-detection
+=================
+Figshare MRI Brain tumor Dataset
+https://www.kaggle.com/datasets/abushayid/figshare-mri-brain-tumor-dataset
+
+
+
+
+pip install torch torchvision pillow numpy matplotlib seaborn scikit-learn tqdm
