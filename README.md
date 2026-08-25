@@ -206,10 +206,9 @@ Model predictions are interpreted using **Grad-CAM** attention maps combined wit
 If you use this work, please cite the thesis:
 
 ```
-Atheeb, M. S. (2026). An Efficient Deep Learning Approach with Modified CNN
-for Multi-Class Brain Tumor Classification. Master's Thesis,
-Department of Computer Science, College of Education for Pure Sciences,
-Wasit University. Supervised by Asst. Prof. Dr. Baraa Ismeal Farhan.
+Atheeb, M. S., & Farhan, B. I. (2026). Lightweight Deep Learning Models for
+Brain Tumor Classification. International Conference on Applied Innovations
+in IT (ICAIIT), Hochschule Anhalt. https://doi.org/10.25673/124569
 ```
 
 ---
