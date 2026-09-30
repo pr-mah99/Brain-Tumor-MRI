@@ -209,6 +209,11 @@ If you use this work, please cite the thesis:
 Atheeb, M. S., & Farhan, B. I. (2026). Lightweight Deep Learning Models for
 Brain Tumor Classification. International Conference on Applied Innovations
 in IT (ICAIIT), Hochschule Anhalt. https://doi.org/10.25673/124569
+
+Shamran, M., & Ismeal Farhan, B. (2026). Optimized Lightweight Convolutional
+Neural Network Architecture for Multi-Class Brain Tumor Classification from
+Magnetic Resonance Imaging. Wasit Journal for Pure Sciences, 5(3), 57–69.
+https://doi.org/10.31185/wjps.1001
 ```
 
 ---
